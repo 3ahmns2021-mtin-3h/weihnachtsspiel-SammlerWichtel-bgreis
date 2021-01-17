@@ -501,6 +501,7 @@ GameObject:
   - component: {fileID: 1038941674}
   - component: {fileID: 1038941676}
   - component: {fileID: 1038941675}
+  - component: {fileID: 1038941677}
   m_Layer: 5
   m_Name: Wichtel
   m_TagString: Untagged
@@ -569,6 +570,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038941673}
   m_CullTransparentMesh: 0
+--- !u!114 &1038941677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038941673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52b31a7b7181e47d5aace022449f4718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1043476019
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,7 +646,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -756,7 +769,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -782,6 +795,8 @@ GameObject:
   - component: {fileID: 1619731928}
   - component: {fileID: 1619731930}
   - component: {fileID: 1619731929}
+  - component: {fileID: 1619731931}
+  - component: {fileID: 1619731932}
   m_Layer: 5
   m_Name: Gut-Geschenk
   m_TagString: Untagged
@@ -847,6 +862,44 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1619731927}
   m_CullTransparentMesh: 0
+--- !u!61 &1619731931
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619731927}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.29862976, y: 0.000019073486}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 70.61595, y: 56.905167}
+  m_EdgeRadius: 0
+--- !u!114 &1619731932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619731927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95b82470e940f42e983dda9ee2c1868b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1705377942
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,6 +911,9 @@ GameObject:
   - component: {fileID: 1705377943}
   - component: {fileID: 1705377945}
   - component: {fileID: 1705377944}
+  - component: {fileID: 1705377948}
+  - component: {fileID: 1705377947}
+  - component: {fileID: 1705377946}
   m_Layer: 5
   m_Name: Wichtel
   m_TagString: Untagged
@@ -923,6 +979,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705377942}
   m_CullTransparentMesh: 0
+--- !u!50 &1705377946
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705377942}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 2
+--- !u!61 &1705377947
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705377942}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.00015258789}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 101.44223, y: 99.73755}
+  m_EdgeRadius: 0
+--- !u!114 &1705377948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705377942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52b31a7b7181e47d5aace022449f4718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1830763608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,6 +1228,8 @@ GameObject:
   - component: {fileID: 1973123943}
   - component: {fileID: 1973123945}
   - component: {fileID: 1973123944}
+  - component: {fileID: 1973123947}
+  - component: {fileID: 1973123946}
   m_Layer: 5
   m_Name: Schlecht-Geschenk
   m_TagString: Untagged
@@ -1137,7 +1254,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -72.589, y: 132}
+  m_AnchoredPosition: {x: -150.8, y: 135.5}
   m_SizeDelta: {x: 70.266594, y: 57.722153}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1973123944
@@ -1178,6 +1295,44 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973123942}
   m_CullTransparentMesh: 0
+--- !u!114 &1973123946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973123942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95b82470e940f42e983dda9ee2c1868b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1973123947
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973123942}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.09400749, y: 0.24097061}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 70.52498, y: 58.129166}
+  m_EdgeRadius: 0
 --- !u!1 &1974262884
 GameObject:
   m_ObjectHideFlags: 0
