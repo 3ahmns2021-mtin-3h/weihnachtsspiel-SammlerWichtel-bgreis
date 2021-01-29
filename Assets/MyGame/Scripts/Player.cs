@@ -1,34 +1,47 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public bool collideBadGift = false;
+    public bool collideGoodGift = false;
+    public int points = 0;
+    public GameObject WichtelObjekt;
+    public TextMeshProUGUI scoreDisplay;
+    public TextMeshProUGUI timeText;
 
-    int countCollisions = 0;
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name == "Cat")
+
+
+        if (collision.name.Contains("GutGeschenk"))
         {
-            countCollisions--;
-        }
-        else if (collision.name == "Bird")
-        {
-            countCollisions--;
-        }
-        else if (collision.name == "Nut")
-        {
-            Debug.Log("in if in Nut + 1 ");
-            countCollisions++;
-        }
-        else if (collision.name == "Nest")
-        {
-            Debug.Log("in if in Nest + 1 ");
-            countCollisions++;
+            Destroy(collision.gameObject);
+            collideGoodGift = true;
+            points++;
+            scoreDisplay.text = points.ToString();
         }
 
-        Debug.Log("count Collisions " + countCollisions);
-        Debug.Log("In Player, collide with " + collision);
+        if (collision.name.Contains("SchlechtGeschenk"))
+        {
+            Destroy(collision.gameObject);
+            collideBadGift = true;
+            points--;
+            scoreDisplay.text = points.ToString();
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    { 
+        if (points < 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        }
     }
 }
