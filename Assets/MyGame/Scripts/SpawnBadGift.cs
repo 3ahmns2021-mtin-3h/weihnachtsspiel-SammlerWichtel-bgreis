@@ -6,7 +6,7 @@ using UnityEngine;
 public class SpawnBadGift : MonoBehaviour
 {
 
-    public GameObject BadGiftPrefab;
+    public GameObject badgiftPrefab;
     public GameObject parentDamageSpawnGo;
 
     public float nextSpawn = 4.0f;
@@ -29,10 +29,10 @@ public class SpawnBadGift : MonoBehaviour
 
     private void BadGiftSpawner()
     {
-        var clones = Instantiate(BadGiftPrefab);
+        var clones = Instantiate(badgiftPrefab);
         clones.GetComponent<Transform>().SetParent(parentDamageSpawnGo.GetComponent<Transform>(), false);
         clones.GetComponent<Transform>().localPosition = new Vector3(Random.Range(-400, 400), 0, 0);
         clones.GetComponent<Transform>().localRotation = Quaternion.identity;
-        clones.GetComponent<Transform>().localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        clones.GetComponent<Transform>().localScale = new Vector3(1f, 1f, 1f);
     }
 }
