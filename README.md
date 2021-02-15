@@ -8,22 +8,22 @@ verliert der Wichtel punkte. Er hat 1 Minute Zeit so viele Pakete wie möglich f
 abend zu retten.
 
 ### Development platform: 
-(OS, Unity 2020 1.5f1 , Visual Studio 2019, used SDKs)
+(OS, Unity 2020 1.5f1 , Visual Studio 2019)
+        
+        # Necessary setup/execution steps: 
+
 
 ### Target platform: 
-WebGL, Ref, Res 960x 600, screen independent,VR Device incl. reference resolution 
+WebGL, Ref, Res 960x 600, screen independent 
 
 ### Visuals: 
-/
-
-### Necessary setup/execution steps: 
 /
 
 ### Third party material: 
 /
 
 ### Project state: 
-90% everything exept Sprites
+80% everything exept Sprites
 
 ### Limitations: 
 /
