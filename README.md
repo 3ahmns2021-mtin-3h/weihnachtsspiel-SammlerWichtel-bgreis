@@ -9,7 +9,6 @@ abend zu retten.
 
 ### Development platform: 
 (OS, Unity 2020 1.5f1 , Visual Studio 2019)
-        
         # Necessary setup/execution steps: 
 
 
@@ -18,10 +17,10 @@ WebGL, Ref, Res 960x 600, screen independent
 
 ### Visuals: 
 <div>
-        <img src="./Screenshots/Start-Screen.png" width="100">
-        <img src="./Screenshots/Game-Screen.png" width="100">
-        <img src="./Screenshots/Won-Screen.png" width="100">
-        <img src="./Screenshots/Loose-Screen.png" width="100">
+        <img src="./Screenshots/Start-Screen.png" width="200">
+        <img src="./Screenshots/Game-Screen.png" width="200">
+        <img src="./Screenshots/Won-Screen.png" width="200">
+        <img src="./Screenshots/Loose-Screen.png" width="200">
 </div>
 
 ### Third party material: 
