@@ -23,7 +23,8 @@ WebGL, Ref, Res 960x 600, screen independent
 /
 
 ### Project state: 
-80% everything exept Sprites
+50% 
+everything exept Sprites & clean Scripts
 
 ### Limitations: 
 /
