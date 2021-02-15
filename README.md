@@ -17,10 +17,10 @@ WebGL, Ref, Res 960x 600, screen independent
 
 ### Visuals: 
 <div>
-        <img src="./Screenshots/Start-Screen.png" width="200">
-        <img src="./Screenshots/Game-Screen.png" width="200">
-        <img src="./Screenshots/Won-Screen.png" width="200">
-        <img src="./Screenshots/Loose-Screen.png" width="200">
+        <img src="./Screenshots/Start-Screen.png" width="400">
+        <img src="./Screenshots/Game-Screen.png" width="400">
+        <img src="./Screenshots/Won-Screen.png" width="400">
+        <img src="./Screenshots/Loose-Screen.png" width="400">
 </div>
 
 ### Third party material: 
