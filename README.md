@@ -17,7 +17,12 @@ abend zu retten.
 WebGL, Ref, Res 960x 600, screen independent 
 
 ### Visuals: 
-/
+<div>
+        <img src="./Screenshots/Start-Screen.png" width="100">
+        <img src="./Screenshots/Game-Screen.png" width="100">
+        <img src="./Screenshots/Won-Screen.png" width="100">
+        <img src="./Screenshots/Loose-Screen.png" width="100">
+</div>
 
 ### Third party material: 
 /
