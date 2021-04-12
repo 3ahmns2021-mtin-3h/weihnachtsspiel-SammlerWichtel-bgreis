@@ -26,6 +26,13 @@ WebGL, Ref, Res 960x 600, screen independent
 50% 
 everything exept Sprites & clean Scripts
 
+### MVP
+• Aufsetzen des 2D Projekts screen-independent (960x600)
+• Player bewegungen horizontal
+• Timer 1 Minute Ende des Spiels
+• Gute und Schlechte Pakete fallen von Himmel
+• Score Display
+
 ### Limitations: 
 /
 
