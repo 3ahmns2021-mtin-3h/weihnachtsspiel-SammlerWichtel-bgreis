@@ -29,7 +29,7 @@ everything exept Sprites & clean Scripts
 ### MVP
 • Aufsetzen des 2D Projekts screen-independent (960x600)
 
-• Player bewegungen horizontal
+• Player Bewegungen horizontal
 
 • Timer 1 Minute Ende des Spiels
 
